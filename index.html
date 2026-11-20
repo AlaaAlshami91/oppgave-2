@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Firestore CRUD</title>
+  <style>
+    .field-box {
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      height: 80px;
+    }
+  </style>
+</head>
+<body>
+  <div class="field-box">
+    <label for="nameBox">Navn</label><br />
+    <input type="text" id="nameBox" />
+  </div>
+
+  <div class="field-box">
+    <label for="rollBox">Rollenummer (ID)</label><br />
+    <input type="text" id="rollBox" />
+  </div>
+
+  <div class="field-box">
+    <label for="secBox">Seksjon</label><br />
+    <select id="secBox">
+      <option value="A">A</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+    </select>
+  </div>
+
+  <div class="field-box">
+    <label for="genBox">Kjønn</label><br />
+    <select id="genBox">
+      <option value="Mann">Mann</option>
+      <option value="Kvinne">Kvinne</option>
+      <option value="Annet">Annet</option>
+    </select>
+  </div>
+
+  <hr />
+
+  <button type="button" id="insertBtn">Lagre (Auto-ID)</button>
+  <button type="button" id="setBtn">Lagre med ID</button>
+  <button type="button" id="selectBtn">Hent</button>
+  <button type="button" id="updateBtn">Oppdater</button>
+  <button type="button" id="deleteBtn">Slett</button>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
